@@ -1,0 +1,16 @@
+print("Tere, maailm!")
+
+aasta = 2020
+liblikas = "teelehemosaiikliblikas"
+lause_keskosa = ". aasta liblikas on "
+lause = str(aasta) + lause_keskosa + liblikas
+print(lause)
+
+h = float(input("Pilvede alumise pinna kõrgus (km): "))
+print("Need "+("on" if h > 6 else "ei ole")+" ülemised pilved")
+
+from math import ceil
+i = int(input("Inimeste arv: "))
+k = int(input("Kohtade arv: "))
+print("Busse vaja: " + str(ceil(i / k)))
+print("Viimases bussis inimesi: "  + str((i - 1) % k + 1))
