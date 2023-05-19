@@ -2,18 +2,23 @@
 # 19.05.2023
 # [ikt22] Iseseisev töö nr5 (python)
 
+from math import ceil
+
+# 1.1. Tervitus
 print("Tere, maailm!")
 
+# 1.2. Aasta liblikas
 aasta = 2020
 liblikas = "teelehemosaiikliblikas"
 lause_keskosa = ". aasta liblikas on "
 lause = str(aasta) + lause_keskosa + liblikas
 print(lause)
 
+# 1.3. Pilved
 h = float(input("Pilvede alumise pinna kõrgus (km): "))
 print("Need "+("on" if h > 6 else "ei ole")+" ülemised pilved")
 
-from math import ceil
+# 1.4. Bussid
 i = int(input("Inimeste arv: "))
 k = int(input("Kohtade arv: "))
 print("Busse vaja: " + str(ceil(i / k)))
